@@ -5,20 +5,31 @@
     <title>jQuery Practice</title>
     <link rel="stylesheet" href="styles.css" >
     <script src="https://use.fontawesome.com/b4ccb25300.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   </head>
   <body>
     <div class="container">
+      <div id="scammy">
+        <img id="pug" src="https://media.giphy.com/media/v4f7aVLX1EoAU/giphy.gif" alt="AHHHHHH"/>
+        <h1 class="winnerText">YOU ARE A WINNER!!!</h1>
+        <button id="stopIt" type="button">OMG STAHP</button>
+        <div id="nope">
+          <!-- <h1 class="winnerText">NOPE.</h1> -->
+          <h1 class="winnerText">NOPE.</h1>
+        </div>
+      </div>
+
       <div class="headtext">
-        <h1>Vacation Destinations of the World</h1>
+        <h1 class="title">Vacation Destinations of the World</h1>
         <button class="scam" type="button">CLICK HERE</button>
         <i class="fa fa-bars fa-2x menu"></i>
 
         <h2><i class="fa fa-arrows-v"></i> Useful Links</h2>
-        <a href="#">Vacation Planning</a>
-        <a href="#">Snorkeling</a>
-        <a href="#">Excursions</a>
-        <a href="#">Deep Sea Fishing</a>
-        <a href="#">Cave Tours</a>
+        <a id="1" href="#">Vacation Planning</a>
+        <a id="2" href="#">Snorkeling</a>
+        <a id="3" href="#">Excursions</a>
+        <a id="4" href="#">Deep Sea Fishing</a>
+        <a id="5" href="#">Cave Tours</a>
       </div>
       <div class="linkbox">
         <i class="fa fa-arrow-left fa-3x"></i>
@@ -34,5 +45,16 @@
         <i class="fa fa-arrow-right fa-3x"></i>
       </div>
     </div>
+    <div class="menudropdown">
+      <ul>
+        <li><a target="_blank" href="https://media.giphy.com/media/oJWx7MtpR2qdi/giphy.gif">PUPS</a></li>
+        <li><a target="_blank" href="https://media.giphy.com/media/oFOfN1nTGg2ac/giphy.gif">BUNNIES</a></li>
+        <li><a target="_blank" href="https://media.giphy.com/media/kBLgxeGUKwJRm/giphy.gif">BIRDS</a></li>
+        <li><a target="_blank" href="https://media.giphy.com/media/3o85xJUQuHVCBnWGys/giphy.gif">HEDGEHOGS</a></li>
+      </ul>
+    </div>
+  </div>
+    <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>

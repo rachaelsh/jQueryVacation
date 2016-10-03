@@ -4,13 +4,15 @@ body {
 
 h1 {
   margin: 0;
-  padding: 40px;
+  font-size: 40px;
+  padding: 0px;
 }
 .container {
     height: 100vh;
     width: 100vw;
     background-image: url("images/intro.jpg");
     background-size: cover;
+    /*background-color: #E0B6B4;*/
 }
 
 .headtext {
@@ -28,16 +30,17 @@ h1 {
   align-items: center;
   align-content: space-between;
   justify-content: center;
+  overflow: hidden;
 }
 
 .box {
   margin: 20px;
+  overflow: hidden;
 }
 
 img {
   height: 200px;
   width: 200px;
-
 }
 
 .scam {
@@ -54,4 +57,75 @@ img {
 a {
   display: block;
   text-decoration: none;
+  color: black;
 }
+
+
+.menudropdown {
+  position: fixed;
+  display: none;
+  text-decoration: none;
+  top: 45px;
+  left: -10px;
+}
+
+.menudropdown li {
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 30px;
+  list-style: none;
+}
+
+#pug, #scammy button, #winnerText {
+  display: block;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.winnerText {
+  font-size: 120px;
+  text-align: center;
+  font-family: "Comic Sans MS", bold, sans-serif;
+  color: white;
+}
+
+#scammy button {
+  font-size: 18px;
+  border-radius: 3px;
+}
+ #please, #nope {
+   display: none;
+ }
+
+
+#scammy {
+  width: 1000px;
+  height: 100vh;
+  display: none;
+  vertical-align: middle;
+  align-items: center;
+  margin: auto;
+  animation: colorchange 0.5s infinite;
+}
+
+@keyframes colorchange
+   {
+     0%   {background: red;}
+     25%  {background: yellow;}
+     50%  {background: blue;}
+     75%  {background: green;}
+     100% {background: red;}
+   }
+
+   @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+   {
+     0%   {background: red;}
+     25%  {background: yellow;}
+     50%  {background: blue;}
+     75%  {background: green;}
+     100% {background: red;}
+   }
